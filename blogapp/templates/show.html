@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang='en'>
+    <head>
+        <meta char='UTF-8'>
+        <title>Blogs Record</title>  
+         {% load static %} 
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    </head>
+    <body>
+       
+        {% for Blog_Table in Blogs %}
+        
+        <div class="bg-dark mb-3 text-success" style="width: 100%;">
+            <div class="card-body">
+              <h3 class="card-title "><span style="color:white"> Title:</span> {{Blog_Table.BlogTitle}}</h3>
+              <p class="card-text"><h5><span style='color:white'>Description:</span></h5>{{Blog_Table.Description}}</p>
+              <h5><span style='color:white'>Author:</span>{{Blog_Table.Author}}</h5>
+              <h5><span style='color:white'>Date:</span>{{Blog_Table.Date}}</h5>
+              <center>
+                <a href="/edit/{{Blog_Table.id}}"><span class="btn btn-warning">Edit</span></a>
+                <a href="/delete/{{Blog_Table.id}}"><span class="btn btn-danger">Delete</a>
+                </center>
+            </div>
+          </div>
+        {% comment %} <h3>
+        Title:
+        <center>
+        {{Blog_Table.BlogTitle}}</h3>
+       
+    </center>
+        <div class="bg-secondary p-2 text-white" >
+        <h3>Description:</h3>{{Blog_Table.Description}}
+    </div>
+    <div class="bg-dark p-2 text-white" > {% endcomment %}
+        {% comment %} <h5>Author:{{Blog_Table.Author}}</h5>
+        <h5>Date:{{Blog_Table.Date}}</h5>
+     {% endcomment %}
+        
+        </div>
+            {% endfor %}
+                {% comment %} {% for Blog_Table in Blogs %}
+                <tr>
+                    {% comment %} <td>{{Blog_Table.Blog_ID}}</td> {% endcomment 
+                    <td>{{Blog_Table.BlogTitle}}</td>
+                    <td>{{Blog_Table.Description}}</td>
+                    <td>{{Blog_Table.Author}}</td>
+                    <td>{{Blog_Table.Date}}</td>
+                    <td>
+                       
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table> {% endcomment %}
+        <br>
+        <br>
+        <center><a href='/blogsite' class='btn btn-success'>Add New Record</a></center>
+    </body>
+    </html>
+
+
+                    

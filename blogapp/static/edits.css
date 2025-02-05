@@ -1,0 +1,117 @@
+/* style.css */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 70%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Input Field Focus Effect */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #e9f7fc;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #218838;
+}
+
+/* Button Active Effect */
+button:active {
+    background-color: #1e7e34;
+}
+
+/* Centering Button */
+.center-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Column Layout for Form */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-4 {
+    display: inline-block;
+}
+
+.col-sm-4 {
+    width: 70%;
+}
+
+.col-sm-2 {
+    width: 25%;
+}
+
+.col-sm-1 {
+    width: 5%;
+}
+
+/* Add margin to last input field */
+.form-group.row:last-child {
+    margin-bottom: 30px;
+}

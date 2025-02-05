@@ -1,0 +1,87 @@
+   /* General Styles */
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Title Section */
+.bg-white {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.bg-white h3 {
+    color: #444;
+}
+
+/* Description Section */
+.bg-secondary {
+    background-color: #6c757d;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bg-secondary h3 {
+    color: #fff;
+}
+
+/* Author and Date Section */
+.bg-dark {
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bg-dark h5 {
+    color: #fff;
+}
+
+/* Button Styles */
+.btn {
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: 1px solid #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #c82333;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: 1px solid #218838;
+}
+
+/* Centering Content */
+center {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Additional Styling */
+.bg-white, .bg-secondary, .bg-dark {
+    margin-top: 20px;
+}
+
+.bg-white h3, .bg-secondary h3, .bg-dark h5 {
+    text-align: center;
+}
